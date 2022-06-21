@@ -91,13 +91,14 @@ body {
 }
 
 /* Landing */
-.landing__figure {
-    position: relative;
-}
-
 .landing__img {
+    position: relative;
     width:100%;
-    height:auto;
+    height: 800px;
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    background-position: 0  0;
+    background-repeat: no-repeat;
 }
 
 .landing__description {
@@ -112,7 +113,7 @@ body {
     align-items: center;
 }
 .landing__description > * {
-    width: 820px; 
+    width:70%;
     text-align: center;
    
 }
@@ -120,7 +121,7 @@ body {
     font-size: 5rem;
     font-weight:500;
     color: #fff;
-    line-height: 1.2;
+    line-height: 1;
 }
 .landing__subtitle {
     font-size: 1.8rem;
