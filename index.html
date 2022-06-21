@@ -1,18 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Spotify Clone</title>
-    <!-- don't forget to link your styles -->
-  </head>
-  <body>
-    Premium Discover Help Download Music for everyone. Spotify is now free on mobile, tablet and computer. Listen to the
-    right music, wherever you are. What’s on Spotify? Millions of Songs There are millions of songs on Spotify HD Music
-    Listen to music as if you were listening live Stream Everywhere Stream music on your smartphone, tablet or computer
-    It’s as yeezy as Kanye West. Search Know what you want to listen to? Just search and hit play. Browse Check out the
-    latest charts, brand new releases and great playlists for right now. Discover Enjoy new music every Monday with your
-    own personal playlist. Or sit back and enjoy Radio.
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Spotify Clone</title>
+  <!-- don't forget to link your styles -->
+</head>
+
+<body>
+
+
+  <div class="container">
+    <!--Header-->
+    <header id="header" class="header">
+      <div class="header__wrapper">
+        <h1 class="header__logo">
+          <img src="./images/spotify-logo.png" alt="Spotify" />
+        </h1>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-listitem"><a href="#premium" title="Premium">Premium</a></li>
+            <li class="header__navigation-listitem"><a href="#discover" title="Discover">Discover</a></li>
+            <li class="header__navigation-listitem"><a href="#help" title="Help">Help</a></li>
+            <li class="header__navigation-listitem"><a href="#download" title="Download">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Header-->
+    <!--Landing-->
+    <section id="landing">
+      <figure class="landing__figure">
+        <img class="landing__img" src="/images/landing.jpg" alt="Music for everyone" />
+        <figcaption class="landing__description">
+          <p class="landing__title">Music for everyone.</p>
+          <p class="landing__subtitle">
+            Spotify is now free on mobile, tablet and computer. <br />
+            Listen to the right music, wherever you are.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+    <!--Landing-->
+    <!--What's on Spotify -->
+    <section id="whats-on" class="whats-on section">
+      <h3 class="section__title">
+        <span>What's on Spotify?</span>
+      </h3>
+      <div class="section__wrapper">
+        <article class="whats-on__item">
+          <img class="whats-on__item-img" src="./images/music-icon.png" alt="Millions of Songs" />
+          <h5 class="whats-on__item-title">Millions of Songs</h5>
+          <p class="whats-on__item-desc">
+            There are millions of songs on Spotify
+          </p>
+        </article>
+        <article class="whats-on__item">
+          <img class="whats-on__item-img" src="./images/high-quality-icon.png" alt="HD Music" />
+          <h5 class="whats-on__item-title">HD Music</h5>
+          <p class="whats-on__item-desc">
+            Listen to music as if you were listening live
+          </p>
+        </article>
+        <article class="whats-on__item">
+          <img class="whats-on__item-img" src="./images/devices-icon.png" alt="Stream Everywhere" />
+          <h5 class="whats-on__item-title">Stream Everywhere</h5>
+          <p class="whats-on__item-desc">
+            Stream music on your smartphone, tablet or computer
+          </p>
+        </article>
+      </div>
+      <!--Music Box-->
+      <section id="music-box" class="music-box">
+          <article class="music-box__item-desc">
+            <h3 class="section__title">
+              <span>It’s as yeezy as Kanye West.</span>
+            </h3>
+            <div class="music-box__wrapper">
+              <ul class="music-box__list">
+                  <li class="music-box__list-item">
+                    <h6 class="music-box__list-title">Search</h6>
+                    <p class="music-box__list-desc"> 
+                      Know what you want to listen to? <br/>
+                      Just search and hit play.
+                    </p>
+                  </li>
+                  <li class="music-box__list-item">
+                    <h6 class="music-box__list-title"> Browse</h6>
+                    <p class="music-box__list-desc"> 
+                      Check out the latest charts, brand new releases and great playlists for right now.
+                    </p>
+                  </li>
+                  <li class="music-box__list-item">
+                    <h6 class="music-box__list-title"> Discover </h6>
+                    <p class="music-box__list-desc"> 
+                      Enjoy new music every Monday with your own personal playlist. <br/>
+                      Or sit back and enjoy Radio.
+                    </p>
+                  </li>
+              </ul>
+              <img class="music-box__img" src="./images/spotify-icon-white.png" alt="Spotify" />
+          </div>
+          </article>
+          <article  class="music-box__item-app">
+            <img class="music-box__img-app" src="./images/spotify-app.jpg" alt="Spotify APP" />
+          </article>
+      </section>
+      <!--Music Box-->
+    </section>
+    <!--What's on Spotify -->
+  </div>
+
+
+
+</body>
+
 </html>

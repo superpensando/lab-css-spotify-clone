@@ -6,3 +6,228 @@ Green: #00B172
 White: #FFF
 
 */
+
+
+/*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #1A1A1A;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+/*Shared*/
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section {
+    padding:50px 32px 32px 32px; 
+}
+.section__title {
+    font-size:2.3rem;
+    line-height: 1.5;
+    font-weight: 600;
+    width:100%;
+    letter-spacing: -1px;
+}
+
+.section__wrapper {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 100px 0; 
+}
+.section__title  + .section__wrapper {
+    padding-top:50px;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+    padding: 10px 32px;
+}
+
+.header__logo img {
+    width:100%;
+    max-width: 200px;
+}
+
+.header__navigation-list {
+    display: flex;
+}
+
+.header__navigation-listitem {
+    margin: 0 20px;
+    font-size: 1.375rem;
+}
+
+.header__navigation a {
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+/* Landing */
+.landing__figure {
+    position: relative;
+}
+
+.landing__img {
+    width:100%;
+    height:auto;
+}
+
+.landing__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing__description > * {
+    width: 820px; 
+    text-align: center;
+   
+}
+.landing__title {
+    font-size: 5rem;
+    font-weight:500;
+    color: #fff;
+    line-height: 1.2;
+}
+.landing__subtitle {
+    font-size: 1.8rem;
+    font-weight:300;
+    color: #fff;
+    line-height: 1.4;
+}
+.landing__title + .landing__subtitle {
+    margin-top:32px;
+}
+
+/* What's on Spotify */
+.whats-on {
+    background-color: #fff;
+}
+.whats-on .section__title {
+    text-align: center;
+}
+.whats-on .section__title span {
+    border-bottom: 4px solid #00B172 ;
+    color: #101010;
+}
+.whats-on__item {
+    min-width: 33.3%;
+}
+.whats-on__item > * {
+    padding: 0 20px;
+}
+.whats-on__item-img {
+    margin:0 auto;
+    width:auto;
+    height:100px;
+}
+.whats-on__item-title,
+.whats-on__item-desc{
+    text-align:center;
+    line-height: 1.5;
+}
+.whats-on__item-title {
+    color:#00B172;
+    font-size: 2rem;
+    font-size:400;
+}
+.whats-on__item-desc {
+    font-size:1.5rem;
+    font-weight: 200;
+    width:75%;
+    margin:0 auto;
+}
+
+.whats-on__item-img + .whats-on__item-title,
+.whats-on__item-img + .whats-on__item-desc {
+    margin-top:20px; 
+}
+.whats-on__item-title + .whats-on__item-desc {
+    margin-top:25px; 
+}
+
+
+/* Music Box */
+.music-box {
+    background-color: #00B172;
+    color: #FFF;
+    padding: 50px; 
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.music-box__item-desc .section__title {
+    text-align: left;
+}
+.music-box__item-desc .section__title span {
+    border-bottom: 4px solid #FFF ;
+    color: #FFF;
+}
+
+.music-box__wrapper {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.music-box__list { 
+    display:block;
+    width:60%;
+}
+
+.music-box__list-title {
+    font-size: 1.5rem;
+}
+.music-box__list-desc {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    
+}
+.music-box__list-item + .music-box__list-item,
+.music-box__list-title  + .music-box__list-desc {
+    margin-top: 30px;
+}
+
+.music-box__img {
+    width: 120px;
+    height:120px;
+    margin:0 auto;
+    padding:20px;
+}
+
+ 
+.music-box__img-app {
+    width:100%;
+    height:auto;
+    max-width:400px;
+  
+}
