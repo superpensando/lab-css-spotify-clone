@@ -240,3 +240,31 @@ body {
     max-width:400px;
   
 }
+
+/* Media Querie */
+@media (max-width: 1024px) {
+
+    .header__logo img {
+        max-width: 150px;
+    }
+
+    .header__navigation-listitem {
+        font-size:1.1rem;
+        margin:0 5px;
+    }
+
+
+    .section__wrapper,
+    .music-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .whats-on__item,
+    .music-box__item-app {
+        margin-top: 50px;
+    }
+    .music-box__img-app {
+        margin:0 auto;
+    }
+
+}
